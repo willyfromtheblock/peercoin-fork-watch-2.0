@@ -8,7 +8,7 @@ export function App() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        "https://peercoinexplorer.net/forkwatch/data/current.dat"
+        "https://fork.peercoinexplorer.net/current.dat"
       );
       const text = await response.text();
       setData(parseFloat(text.split(",")[1]));
