@@ -1,8 +1,10 @@
+import { render } from "preact";
 import { useState, useEffect } from "preact/hooks";
 import "./app.css";
+import Progress from "react-circle-progress-bar";
 
 export function App() {
-  let [data, setData] = useState(0.0);
+  const [data, setData] = useState(0.0);
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
@@ -13,19 +15,16 @@ export function App() {
     }
     fetchData();
   });
-  console.log(data);
+
   return (
-    <>
-      <div class="loader-container">
-        <div
-          id="loader"
-          class="ldBar"
-          data-type="fill"
-          data-fill-dir="btt"
-          data-img="img/peercoin.svg"
-          data-value={data}
-        />
-      </div>
-    </>
+    <div class="loader-container">
+      <Progress
+        progress={data}
+        gradient={[
+          { stop: 0.0, color: "#3cb054" },
+          { stop: 1, color: "#3cb054" },
+        ]}
+      />
+    </div>
   );
 }
