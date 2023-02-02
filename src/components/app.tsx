@@ -67,7 +67,9 @@ export function App() {
                   alt="status"
                 />
               </td>
-              <td>90% majority block version 4 over the last 1000 blocks</td>
+              <td>
+                90% majority block version 4 over the last 1000 blocks reached
+              </td>
             </tr>
             <tr>
               <td>
