@@ -1,3 +1,4 @@
+@import "google-fonts-roboto.css";
 $background-color: #3cb054;
 $accent-color: #dff0d8;
 $text-color: white;
@@ -7,14 +8,12 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
-  color: $text-color !important;
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.vertical-timeline::before {
-  background: $background-color !important;
+  background-color: $accent-color;
 }
 
 a,
@@ -34,9 +33,29 @@ h1 {
   text-align: center;
   font-weight: 900 !important;
   font-size: 2rem !important;
+  color: black;
   @media (min-width: 992px) {
     font-size: 2.5rem !important;
   }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.block-center {
+  display: block;
+  text-align: center;
+}
+
+.m-y-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.m-t-3 {
+  padding-top: 3rem;
 }
 
 .ppc {
@@ -50,20 +69,18 @@ h1 {
       font-size: 1.2rem;
     }
   }
+  &-logo {
+    @media (min-width: 810px) {
+      width: 20vw;
+    }
+    width: 40vw;
+  }
   &-background {
     background-color: $background-color;
+    padding: 1rem;
   }
   &-hero {
     height: 100vh;
-    min-height: 1000px;
-  }
-  &-arrow {
-    &_down {
-      background-color: $background-color;
-      border-radius: 2rem;
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-    }
+    min-height: 600px;
   }
 }
