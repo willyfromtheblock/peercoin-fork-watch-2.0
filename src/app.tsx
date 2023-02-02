@@ -1,4 +1,3 @@
-import { render } from "preact";
 import { useState, useEffect } from "preact/hooks";
 import "./app.css";
 import Progress from "react-circle-progress-bar";
@@ -17,7 +16,7 @@ export function App() {
   }, []);
 
   return (
-    <div class="loader-container">
+    <div class="progress-container">
       <Progress
         progress={data}
         gradient={[
