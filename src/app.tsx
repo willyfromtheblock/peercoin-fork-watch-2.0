@@ -5,19 +5,32 @@ import { Chart } from "./chart";
 export function App() {
   const [progress, setProgress] = useState(0.0);
   const [isOver90Percent, setIsOver90Percent] = useState(false);
+  const [forkActivated, setForkActivated] = useState(0);
   const activationTimeReached = Date.now() >= 1681732800 * 1000;
 
   useEffect(() => {
-    async function fetchProgress() {
-      const response = await fetch(
+    async function fetchProgressAndReachedThreshold() {
+      const currentResponse = await fetch(
         "https://fork.peercoinexplorer.net/current.dat"
       );
-      const text = await response.text();
-      const progressInBackend = parseFloat(text.split(",")[1]);
+      const currentText = await currentResponse.text();
+      const progressInBackend = parseFloat(currentText.split(",")[1]);
       setProgress(progressInBackend);
       setIsOver90Percent(progressInBackend >= 90 ? true : false);
+
+      const reachedThresholdResponse = await fetch(
+        "https://fork.peercoinexplorer.net/fork_activated.dat"
+      );
+
+      const forkActivatedResult = JSON.parse(
+        await reachedThresholdResponse.text()
+      );
+
+      if (forkActivatedResult > 0) {
+        setForkActivated(forkActivatedResult * 1000);
+      }
     }
-    fetchProgress();
+    fetchProgressAndReachedThreshold();
   }, []);
 
   return (
@@ -69,8 +82,10 @@ export function App() {
             </tr>
           </table>
           <div class="flex-center ppc-fork-active">
-            {isOver90Percent && activationTimeReached ? (
-              <h2>Fork activated</h2>
+            {forkActivated > 0 ? (
+              <h2>
+                Fork activated since {new Date(forkActivated).toUTCString()}
+              </h2>
             ) : (
               <h2>Fork not activated</h2>
             )}
