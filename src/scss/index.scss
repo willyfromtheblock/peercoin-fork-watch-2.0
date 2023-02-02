@@ -67,6 +67,10 @@ h1 {
   padding-top: 3rem;
 }
 
+footer {
+  color: black;
+}
+
 .ppc {
   &-paragraph {
     font-size: 1rem;
@@ -103,13 +107,16 @@ h1 {
     }
   }
   &-table {
-    padding: 0.5rem;
     margin-left: auto;
     margin-right: auto;
 
     td:first-child {
       padding-right: 1rem;
       display: flex;
+    }
+
+    td {
+      padding: 0 0.5rem;
     }
 
     * img {

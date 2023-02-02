@@ -78,6 +78,9 @@ export function App() {
 
         {/* <div class="m-y-3">chart</div> */}
       </div>
+      <footer class="ppc-footer block-center m-y-3">
+        Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9
+      </footer>
     </div>
   );
 }
