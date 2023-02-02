@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "highcharts": "^10.3.3",
+    "highcharts-react-official": "^3.1.0",
     "preact": "^10.11.3",
     "react-circle-progress-bar": "^0.1.4"
   },

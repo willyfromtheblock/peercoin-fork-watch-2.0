@@ -1,5 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
 import Progress from "react-circle-progress-bar";
+import { Chart } from "./chart";
 
 export function App() {
   const [progress, setProgress] = useState(0.0);
@@ -67,7 +68,7 @@ export function App() {
               <td>April 17th, 2023 - 12:00 UTC reached</td>
             </tr>
           </table>
-          <div class="block-center">
+          <div class="flex-center ppc-fork-active">
             {isOver90Percent && activationTimeReached ? (
               <h2>Fork activated</h2>
             ) : (
@@ -75,10 +76,11 @@ export function App() {
             )}
           </div>
         </div>
-
-        {/* <div class="m-y-3">chart</div> */}
+        <div class="m-y-2 flex-center">
+          <Chart />
+        </div>
       </div>
-      <footer class="ppc-footer block-center m-y-3">
+      <footer class="ppc-footer block-center m-y-1">
         Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9
       </footer>
     </div>
