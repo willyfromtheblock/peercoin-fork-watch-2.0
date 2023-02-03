@@ -73,7 +73,7 @@ footer {
   }
   display: flex;
   justify-content: space-evenly;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .chart {
@@ -100,6 +100,7 @@ footer {
     @media (max-width: 576px) {
       font-size: 0.7rem;
     }
+    text-align: center;
   }
   &-logo {
     @media (min-width: 810px) {
