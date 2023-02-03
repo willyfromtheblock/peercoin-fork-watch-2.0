@@ -97,7 +97,7 @@ export function App() {
           <Chart />
         </div>
       </div>
-      <footer class="ppc-footer block-center m-y-1">
+      <footer class="ppc-footer m-y-1">
         <div>
           <a href="https://talk.peercoin.net/t/peercoin-v0-12-codename-ladybug-released/15969" rel="noopener norefferer" target="_blank">What is this about?</a>
         </div>
