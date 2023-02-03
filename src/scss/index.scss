@@ -116,6 +116,8 @@ footer {
     }
   }
   &-fork-active {
+    margin: 0 0.5rem;
+    text-align: center;
     > h2 {
       padding: 0.5rem;
       border: 1px solid $accent-color;
