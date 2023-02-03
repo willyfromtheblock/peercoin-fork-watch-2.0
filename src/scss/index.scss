@@ -68,7 +68,12 @@ h1 {
 }
 
 footer {
-  color: black;
+  * {
+    color: black !important;
+  }
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
 
 .chart {
@@ -90,6 +95,14 @@ footer {
     @media (min-width: 576px) {
       font-size: 1.2rem;
     }
+  }
+  &-donation {
+    @media (max-width: 576px) {
+      font-size: 0.7rem;
+    }
+    text-align: center;
+    margin-left: 0.5rem;
+    display: contents;
   }
   &-logo {
     @media (min-width: 810px) {

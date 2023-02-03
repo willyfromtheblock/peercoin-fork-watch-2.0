@@ -97,8 +97,11 @@ export function App() {
           <Chart />
         </div>
       </div>
-      <footer class="ppc-footer block-center m-y-1">
-        Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9
+      <footer class="ppc-footer m-y-1">
+        <div>
+          <a href="https://talk.peercoin.net/t/peercoin-v0-12-codename-ladybug-released/15969" rel="noopener norefferer" target="_blank">What is this about?</a>
+        </div>
+        <div class="ppc-donation">Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9</div>
       </footer>
     </div>
   );
