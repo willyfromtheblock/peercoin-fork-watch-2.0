@@ -2,6 +2,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)
     format("woff2");
@@ -12,6 +13,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)
     format("woff2");
@@ -21,6 +23,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)
     format("woff2");
@@ -30,6 +33,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)
     format("woff2");
@@ -39,6 +43,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)
     format("woff2");
@@ -49,6 +54,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)
     format("woff2");
@@ -59,6 +65,7 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
   src: url(https://fonts.peercoinexplorer.net/roboto/v29/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)
     format("woff2");
