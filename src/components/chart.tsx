@@ -4,7 +4,7 @@ import { useState, useEffect } from "preact/hooks";
 
 export function Chart() {
   const [chartData, setChartData] = useState(Array<any>);
-  let myArray: Array<any> = [];
+  let chartDataCache: Array<any> = [];
 
   useEffect(() => {
     async function fetchProgress() {
@@ -16,11 +16,11 @@ export function Chart() {
 
       splitText.forEach((x) => {
         if (x.length > 0) {
-          myArray.push(JSON.parse(x));
+          chartDataCache.push(JSON.parse(x));
         }
       });
 
-      setChartData(myArray);
+      setChartData(chartDataCache);
     }
     fetchProgress();
   }, []);
