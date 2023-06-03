@@ -9,7 +9,7 @@ export function Chart() {
   useEffect(() => {
     async function fetchProgress() {
       const response = await fetch(
-        "https://fork.peercoinexplorer.net/history.dat"
+        "https://fork.peercoinexplorer.net/history_grouped.dat"
       );
       const text = await response.text();
       const splitText = text.split("\n");
